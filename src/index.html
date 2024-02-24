@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cifrados Antiguos</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/cesar.js"></script>
+    <script src="/js/polybios.js"></script>
+    <script src="/js/vigenere.js"></script>
+    <script src="/js/hill.js"></script>
+    <script src="/js/playfair.js"></script>
+    <script src="/js/alberti.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body onload="main()" class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500">
+    <header>
+        <h1 class="not-italic text-6xl font-bold text-neutral-50 drop-shadow-2xl">Algoritmos de Criptografía</h1>
+    </header>
+    <article class="mt-16">
+        <div  id="controles" class="not-italic text-base font-bold text-neutral-50 mb-8">
+            <label>Tipo de algoritmo</label>
+            <select name="algoritmo" id="algoritmo" class="bg-slate-500 p-2 rounded-full">
+                <option value="cesar">Cesar</option>
+                <option value="polybios">Polybios</option>
+                <option value="alberti-clave">Alberti</option>
+                <option value="vigenere-clave">Vigénere</option>
+                <option value="playfair">Playfair</option>
+                <option value="hill-matriz">Hill</option>
+            </select>
+            
+            <label class="ms-16">Acción</label>
+            <select name="accion" id="accion" class="bg-slate-500 p-2 rounded-full">
+                <option value="cifrar">Cifrar</option>
+                <option value="descifrar">Descifrar</option>
+            </select>
+            <label id="label-clave" class="ms-16">Clave</label></label>
+            <input id="input-clave" type="text" name="clave" class="bg-slate-500 p-2 rounded-full">
+        </div>
+       
+        <div id="principal">
+            <textarea id="editor" class="bg-gray-200 border-double border-4 border-slate-500 rounded-s-full p-20"></textarea>
+            <div id="resultado" class="bg-gray-200 border-double border-4 border-slate-500 rounded-e-full"></div>
+        </div>
+        
+    </article >
+    <footer class="seccion">
+        <p class="not-italic text-base text-neutral-50">&copy; Criptografia2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+html,*, *:before, *:after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex-grow: 2;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article{
+    flex-grow: 12;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2cm;
+}
+
+footer{
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    padding: 0.2cm;
+}
+
+/**
+ * Contenedores de texto
+ */
+
+#controles{
+    padding: 0.2cm;
+    font-family:'Overpass',sans-serif;
+}
+
+#principal{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+}
+
+#editor{
+    height: 50%;
+    width: 50%;
+    font-size:14pt;
+    resize: none;
+}
+
+#resultado{
+    height: 50%;
+    width: 50%;
+    font-size:14pt;
+}
+
+#placeholder {
+    font-size: 14pt;
+    position: relative;
+    top:50%;
+    left:50%;
+    overflow-wrap: break-word;
+    transform: translate(-50%,-50%);
+}
+
+#label-clave,#input-clave{
+    visibility: hidden;
+}
